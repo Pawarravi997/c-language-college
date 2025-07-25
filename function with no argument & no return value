@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+void area();  // Function prototype
+
+int main() {
+    area();
+    return 0;
+}
+
+void area() {
+    int l, b, rectarea;
+    printf("Enter value of length and breadth: ");
+    scanf("%d%d", &l, &b);
+    rectarea = l * b;
+    printf("Area = %d\n", rectarea);
+}
