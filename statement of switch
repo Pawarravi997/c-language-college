@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() {
+    int month;
+
+    printf("Enter month (1-12): ");
+    scanf("%d", &month);
+
+    switch (month) {
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+            printf("Season = Summer\n");
+            break;
+
+        case 7:
+        case 8:
+        case 9:
+        case 10:
+            printf("Season = Monsoon\n");
+            break;
+
+        case 11:
+        case 12:
+        case 1:
+        case 2:
+            printf("Season = Winter\n");
+            break;
+
+        default:
+            printf("Please enter a valid month (1-12).\n");
+    }
+
+    return 0;
+}
+
+o/p
+Enter month (1-12): 8
+Season = Monsoon
+
