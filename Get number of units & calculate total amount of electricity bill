@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int units;
+    float unitrate = 2.5, Totalamount;
+
+    printf("Enter number of units: ");
+    scanf("%d", &units);
+
+    Totalamount = unitrate * units;
+
+    printf("Total Amount = %.2f\n", Totalamount);
+
+    return 0;
+}
+
+o/p
+Enter number of units: 10
+Total Amount = 25.00
