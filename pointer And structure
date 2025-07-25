@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>  // For strcpy()
+
+struct student {
+    int rollno;
+    char name[10];
+};
+
+int main() {
+    struct student st[5];
+    struct student *ptr = st;  // pointer to structure array
+
+    for (int i = 0; i < 5; i++) {
+        (ptr + i)->rollno = i + 1;  // using pointer to assign
+        strcpy((ptr + i)->name, "student");  // copy name
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("Roll Number = %d, Name = %s\n", (ptr + i)->rollno, (ptr + i)->name);
+    }
+
+    return 0;
+}
+
+o/p
+Roll Number = 1, Name = student
+Roll Number = 2, Name = student
+Roll Number = 3, Name = student
+Roll Number = 4, Name = student
+Roll Number = 5, Name = student
