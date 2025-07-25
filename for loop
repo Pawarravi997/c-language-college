@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    printf("Numbers between 1 to 50 that are divisible by both 3 and 7:\n");
+
+    for (num = 1; num <= 50; num++) {
+        if (num % 3 == 0 && num % 7 == 0) {
+            printf("%d\n", num);
+        }
+    }
+
+    return 0;
+}
+
+o/p
+Numbers between 1 to 50 that are divisible by both 3 and 7:
+21
+42
