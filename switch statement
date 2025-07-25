@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+int main() {
+    int n1, n2, choice;
+    int add, sub, mult;
+    float div;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &n1, &n2);
+
+    printf("\nChoose an operation:\n");
+    printf("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n");
+
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    switch (choice) {
+        case 1:
+            add = n1 + n2;
+            printf("Addition = %d\n", add);
+            break;
+        case 2:
+            sub = n1 - n2;
+            printf("Subtraction = %d\n", sub);
+            break;
+        case 3:
+            mult = n1 * n2;
+            printf("Multiplication = %d\n", mult);
+            break;
+        case 4:
+            if (n2 != 0) {
+                div = (float)n1 / n2;
+                printf("Division = %.2f\n", div);
+            } else {
+                printf("Error: Division by zero is not allowed.\n");
+            }
+            break;
+        default:
+            printf("Invalid choice. Please enter a number from 1 to 4.\n");
+    }
+
+    return 0;
+}
+
+o/p
+Enter two numbers: 10 5
+Choose an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+Enter your choice: 4
+
+Division = 2.00
+
