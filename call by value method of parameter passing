@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void area(int x); // Function prototype
+
+int main() {
+    int x = 10;
+
+    area(x);           // Pass x by value
+    printf("Value of x in main after function call = %d\n", x);
+
+    return 0;
+}
+
+void area(int x) {
+    x = 20;            // Changes local copy only
+    printf("Value of x inside function = %d\n", x);
+}
+
+o/p
+Value of x inside function = 20
+Value of x in main after function call = 10
