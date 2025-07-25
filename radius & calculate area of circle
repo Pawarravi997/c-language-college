@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int length, breadth, area;
+
+    printf("Enter length and breadth: ");
+    scanf("%d %d", &length, &breadth);
+
+    area = length * breadth;
+
+    printf("Area = %d\n", area);
+
+    return 0;
+}
+
+
+o/p
+Enter length and breadth: 5 10
+Area = 50
