@@ -14,3 +14,6 @@ void area() {
     rectarea = l * b;
     printf("Area = %d\n", rectarea);
 }
+o/p 
+  enter value of l & b 30 10
+   area=300
