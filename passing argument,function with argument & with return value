@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int area(int l, int b);  // Function prototype
+
+int main() {
+    int l, b, rectarea;
+
+    printf("Enter value of length and breadth: ");
+    scanf("%d%d", &l, &b);
+
+    rectarea = area(l, b);  // Call function with arguments
+
+    printf("Area = %d\n", rectarea);
+
+    return 0;
+}
+
+int area(int l, int b) {
+    int rectarea;
+    rectarea = l * b;  // Correct multiplication
+    return rectarea;
+}
+o/p 
+  enter value of l & b 5 10
+   area=50
