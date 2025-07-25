@@ -20,3 +20,10 @@ int main() {
 
     return 0;
 }
+
+o/p
+   enter first number & second number: 20 10
+   Addition=30
+   Substraction=10
+   Multiplication=200
+   Division=2
