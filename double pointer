@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+void main() {
+    int x = 10;
+    int *ptr1 = &x;      // single pointer pointing to x
+    int **ptr2 = &ptr1;  // double pointer pointing to ptr1
+
+    printf("Value of x = %d\n", x);         // prints value of x
+    printf("Value of *ptr1 = %d\n", *ptr1); // dereference ptr1 (gets value of x)
+    printf("Value of **ptr2 = %d\n", **ptr2); // double dereference (gets value of x)
+}
+
+o/p
+Value of x = 10
+Value of *ptr1 = 10
+Value of **ptr2 = 10
