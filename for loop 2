@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int num, sum = 0;
+
+    printf("Sum of numbers from 1 to 20:\n");
+
+    for (num = 1; num <= 20; num++) {
+        sum += num;
+    }
+
+    printf("Sum = %d\n", sum);
+
+    return 0;
+}
+
+o/p
+Sum of numbers from 1 to 20:
+Sum = 210
