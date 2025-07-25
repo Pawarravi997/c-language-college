@@ -1,0 +1,15 @@
+# c language structure
+
+1. /*Documentation section */
+2. <Headerfiles section>
+3. Global declaration
+4. Return type main ()
+    {
+      declaration part;
+      execution part;
+    }
+5. Return type function name ()
+    {
+      declaration part;
+      execution part;
+    }
