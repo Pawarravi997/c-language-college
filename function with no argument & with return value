@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+// Function prototype
+int area();
+
+int main() {
+    int a;
+
+    a = area();  // Call function and store returned value
+
+    printf("Area = %d\n", a);
+
+    return 0;
+}
+
+int area() {
+    int l, b, rectarea;
+
+    printf("Enter value of length and breadth: ");
+    scanf("%d%d", &l, &b);
+
+    rectarea = l * b;
+
+    return rectarea;  // Return calculated area
+}
+o/p 
+  enter value of l & b 30 10
+   area=300
