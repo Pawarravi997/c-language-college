@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+// Function prototype
+int fact(int n);
+
+void main() {
+    int num;
+    int (*ptr)(int); // pointer to function that takes int and returns int
+    int factorial;
+
+    printf("Enter a value: ");
+    scanf("%d", &num);
+
+    ptr = fact;               // assign function address to pointer
+    factorial = (*ptr)(num);  // call function via pointer
+
+    printf("Factorial = %d\n", factorial);
+}
+
+// Function definition
+int fact(int n) {
+    int x, fact = 1;
+    for (x = 1; x <= n; x++) {   // corrected: loop from 1 to n
+        fact = fact * x;
+    }
+    return fact;
+}
+
+o/p
+Enter a value: 5
+Factorial = 120
