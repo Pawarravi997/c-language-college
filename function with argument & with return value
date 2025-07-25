@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+// Function prototype: takes two ints, returns int
+int area(int l, int b);
+
+int main() {
+    int l, b, rectarea;
+
+    printf("Enter value of length and breadth: ");
+    scanf("%d%d", &l, &b);
+
+    rectarea = area(l, b);  // Call function with arguments
+
+    printf("Area = %d\n", rectarea);
+
+    return 0;
+}
+
+// Function definition
+int area(int l, int b) {
+    return l * b;
+}
+
+o/p
+Enter value of length and breadth: 5 6
+Area = 30
