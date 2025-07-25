@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void change(int *ptr);  // Function prototype
+
+int main() {
+    int r = 10;
+
+    printf("Before calling change(), r = %d\n", r);
+
+    change(&r);  // Passing address of r
+
+    printf("After calling change(), r = %d\n", r);
+
+    return 0;
+}
+
+void change(int *ptr) {
+    *ptr = 20;  // Modify value at address
+}
+
+o/p
+Before calling change(), r = 10
+After calling change(), r = 20
