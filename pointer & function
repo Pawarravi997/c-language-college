@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+void main() {
+    int x = 10;
+    int *ptr = &x;
+
+    printf("Value of x = %d\n", x);
+    printf("Address of x = %p\n", (void *)&x);   // Use %p to print addresses
+    printf("Value of ptr = %p\n", (void *)ptr);  // %p for pointer value
+    printf("Value of *ptr = %d\n", *ptr);
+}
+
+example:
+#include <stdio.h>
+
+void updateValue(int *p) {
+    *p = *p + 5;  // Modify value at the pointer address
+}
+
+void main() {
+    int x = 10;
+
+    printf("Before: x = %d\n", x);
+    updateValue(&x);  // Pass address of x
+    printf("After: x = %d\n", x);
+}
+
+
+o/p
+Before: x = 10
+After: x = 15
