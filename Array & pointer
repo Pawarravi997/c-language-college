@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void main() {
+    int num[5] = {10, 20, 30, 40, 50}; // Fix: only 5 elements, not 6
+    int *ptr;
+    int x;
+
+    ptr = num; // point ptr to the base address of array
+
+    printf("Accessing array using pointers:\n");
+
+    for (x = 0; x < 5; x++) {
+        printf("%d\n", *(ptr + x)); // pointer arithmetic
+    }
+}
+
+o/p
+Accessing array using pointers:
+10
+20
+30
+40
+50
