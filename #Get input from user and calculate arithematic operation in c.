@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2, add, sub, mult;
+    float div;
+
+    printf("Enter first number and second number: ");
+    scanf("%d %d", &num1, &num2);
+
+    add = num1 + num2;
+    sub = num1 - num2;
+    mult = num1 * num2;
+
+    if (num2 != 0) {
+        div = (float)num1 / num2;  // Typecasting to get correct float result
+        printf("Addition = %d\nSubtraction = %d\nMultiplication = %d\nDivision = %.2f\n", add, sub, mult, div);
+    } else {
+        printf("Addition = %d\nSubtraction = %d\nMultiplication = %d\nDivision = Undefined (division by zero)\n", add, sub, mult);
+    }
+
+    return 0;
+}
