@@ -12,3 +12,8 @@ int main() {
 
     return 0;
 }
+
+o/p
+   enter radius of circle:10
+   Area of circle is=310
+
