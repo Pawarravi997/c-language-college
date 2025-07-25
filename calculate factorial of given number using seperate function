@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+// Function prototype
+int calculatefactorial(int num);
+
+int main() {
+    int num, fact;
+    
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    
+    fact = calculatefactorial(num);
+    
+    printf("Factorial of %d is %d\n", num, fact);
+    
+    return 0;
+}
+
+int calculatefactorial(int num) {
+    int x, fact = 1;
+    
+    for (x = 1; x <= num; x++) {
+        fact = fact * x;
+    }
+    
+    return fact;
+}
+
+o/p
+Enter a number: 5
+Factorial of 5 is 120
+
