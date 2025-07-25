@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    int units;
+    float amount = 0, surcharges = 0, Totalamount = 0;
+
+    printf("Enter your number of units: ");
+    scanf("%d", &units);
+
+    if (units <= 50) {
+        amount = units * 4;
+    } else if (units <= 100) {
+        amount = 50 * 4 + (units - 50) * 6;
+    } else if (units <= 150) {
+        amount = 50 * 4 + 50 * 6 + (units - 100) * 8;
+    } else if (units <= 200) {
+        amount = 50 * 4 + 50 * 6 + 50 * 8 + (units - 150) * 10;
+    } else {
+        amount = 50 * 4 + 50 * 6 + 50 * 8 + 50 * 10 + (units - 200) * 15;
+    }
+
+    surcharges = amount * 0.20;
+    Totalamount = amount + surcharges;
+
+    printf("Number of units = %d\n", units);
+    printf("Amount = %.2f\n", amount);
+    printf("Surcharges (20%%) = %.2f\n", surcharges);
+    printf("Total Amount = %.2f\n", Totalamount);
+
+    return 0;
+}
+
+o/p
+
+Enter your number of units: 170
+Number of units = 170
+Amount = 1000.00
+Surcharges (20%) = 200.00
+Total Amount = 1200.00
+
